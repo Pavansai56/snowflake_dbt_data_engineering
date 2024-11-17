@@ -1,0 +1,23 @@
+version: 2
+sources:
+    - name : AUDIT
+      database : DEV_AUDIT
+      schema : AUDIT
+      tables :
+        - name : ABAC_BATCH
+        - name : ABAC_BATCH_RUN
+        - name : ABAC_JOB
+        - name : ABAC_JOB_RUN
+        - name : VW_ABAC
+    - name : RAW
+      database : DEV_RAW
+      schema : RAW
+      tables : 
+        - name : EMPLOYEE_STG
+    - name : CURATED
+      database : DEV_CURATED
+      schema : CURATED
+      tables :
+        - name : EMPLOYEE_SCD1
+        
+
